@@ -98,7 +98,6 @@ Function Convert-CsvToJson($SourceDirectory, $DestinationDirectory, $CustomerId,
         }
     }
 
-    Register-ObjectEvent -InputObject $FileSystemWatcher -EventName "Created" -Action $Action
     Register-ObjectEvent -InputObject $FileSystemWatcher -EventName "Changed" -Action $Action
 }
 
